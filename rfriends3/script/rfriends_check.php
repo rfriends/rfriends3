@@ -1,0 +1,2 @@
+<?php
+ require_once("rf_inc.php"); require_once("rf_menu.php"); require_once("rf_menu2.php"); require_once("rf_menu_sub.php"); $rfriends_mes = "ラジオ録音ツール"; $fn = $tmpdir.$cleanlog_fn; $flg = check_cleanlog($fn); if ($flg == 1) { rf_batsh_rec($ex_clean, 0, 1, 1, ""); } exit(0); 

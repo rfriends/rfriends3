@@ -1,0 +1,2 @@
+<?php
+ require_once("rf_inc.php"); $rfriends_mes = "ラジオ録音ツール"; $p = explode(",", $argv[1]); if (count_73($p) == 4) { $test_mode = $p[0]; $msg_level = $p[1]; $ex_type = $p[2]; $fnm = $p[3]; } else { exit(1); } if ($rec_sleep_program == 1) { $mgn= 0; rf_rec_sleep($ex_type, $fnm, $mgn); } exit(0); 
