@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<title>dom-sample1</title>
+<meta charset="utf-8">
+
+</head>
+<body>
+<?php
+$url ="https://audee.jp/program/show/40889#page2";
+exec("phantomjs.exe $url", $output, $resultCode);
+echo "<p>rsult : $resultCode</p>";
+print_r($output);
+?>
+</body>
+</html>

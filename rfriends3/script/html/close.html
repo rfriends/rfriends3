@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+</head>
+
+<body>
+<!--　-->
+<h2>実行中はrfriendsのWebサイトにはアクセスできません。</h2>
+<p></p>
+
+<?php
+$val = 0;
+if (isset($_GET['val'])) {
+    $val = $_GET['val'];
+}
+
+switch($val) {
+    case 1:
+        echo "<p>領域拡張</p>";
+        echo "<p></p>";
+        echo "<p>ラズベリーパイの緑色のランプが消えて、再起動すると「再度」緑色のランプが点灯します。</p>";
+        echo "<p>その後、緑色のランプが点滅し領域拡張を行います。</p>";
+        echo "<p>拡張処理にはmicroSDの容量が大きいほど時間がかかります。</p>";
+        echo "<p>32GBのmicroSDで約2分</p>";
+
+        break;
+    case 2:
+        echo "<p>シャットダウン</p>";
+        echo "<p></p>";
+        echo "<p>シャットダウンを開始しました。</p>";
+        echo "<p>ラズベリーパイの緑色のランプが消えるまでお待ちください。</p>";
+
+        break;
+    case 3:
+        echo "<p>再起動</p>";
+        echo "<p></p>";
+        echo "<p>ラズベリーパイの再起動（リブート）を開始しました。</p>";
+        echo "<p>ラズベリーパイの緑色のランプが消えて、「再度」緑色のランプが点灯するまでお待ちください。</p>";
+        echo "<p>約1-2分</p>";
+
+        break;
+    default:
+        break;
+}
+
+?>
+    <p></p>
+    <a href=index.html>ホームページ</a>
+<!-- 
+    <input type="button" onclick="window.open('','_self').close();" value="閉じる">
+-->
+</body>
+</html>

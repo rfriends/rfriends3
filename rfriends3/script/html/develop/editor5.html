@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>HTML5 TIPS</title>
+<script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>HTML5 TIPS</title>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  // ファイルが指定されたタイミングで、その情報を表示
+  document.querySelector("#file").addEventListener('change', function(e) {
+      document.querySelector('#test').innerHTML = "----";
+    // File APIを利用できるかをチェック（1）
+    if (window.File) {
+      // 指定されたファイルを取得（2）
+      var input = document.querySelector('#file').files[0];
+      // ファイル情報をページに反映（3）
+      document.querySelector('#test').innerHTML = "test";
+      document.querySelector('#name').innerHTML = input.name;
+      document.querySelector('#type').innerHTML = input.type;
+      document.querySelector('#size').innerHTML = input.size / 1024;
+      document.querySelector('#urn').innerHTML = input.urn;
+    } else {
+      document.querySelector('#test').innerHTML = "xxxx";
+      document.querySelector('#name').innerHTML = "yyyy";
+    }
+  }, true);
+});
+</script>
+</head>
+<body>
+file:
+<input id="file" name="file" type="file" />
+<ul>
+  <li>test：<span id="test"></span></li>
+  <li>name：<span id="name"></span></li>
+  <li>type：<span id="type"></span></li>
+  <li>size：<span id="size"></span></li>
+  <li>URN：<span id="urn"></span></li>
+</ul>
+</body>
+</html>

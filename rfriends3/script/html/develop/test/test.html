@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<!--
+<link rel="stylesheet" href="css/test.css" />
+<script src="js/test.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+-->
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<title>ajax-sample1</title>
+<meta charset="utf-8">
+
+    <!--jQueryを使うために<head>内に下記コードを追加-->
+ 
+    <!--jQueryここから-->
+    <script>
+        $(function() {   
+            // ボタンをクリックすると外部ファイル（test2.html）を読み込む
+            $('.sub1').click(function() {
+                // [result]の位置に読み込んだ内容を表示
+                $('#result1').load('develop/sub1.html');
+            });
+            $('.sub2').click(function() {
+                // [result]の位置に読み込んだ内容を表示
+                $('#result2').load('develop/sub2.html');
+            });
+        });
+    </script>
+    <!--jQueryここまで-->
+ 
+</head>
+<body>
+    <button class=sub1>ここをクリック</button>
+    <div id="result1"></div>
+    <button class=sub2>ここをクリック</button>
+    <div id="result2"></div>
+<p>foot</p>
+</body>
+</html>

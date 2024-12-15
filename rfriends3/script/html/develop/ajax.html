@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample</title>
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<div class="result0">検索処理</div>
+<input type="button" class="sample_btn" value="実行">
+<div class="result1"></div>
+<div class="result2"></div>
+
+<script>
+$(function(){
+
+    $('.sample_btn').click(function(){
+	$(".result1").text("検索中です");
+        $.ajax({
+            url: '/ajaxtest.html',
+            type: 'GET',
+            dataType: 'html'
+        }).done(function(data){
+            $('.result2').html(data);
+            
+        }).fail(function(data){
+            alert('通信失敗！');
+                    
+        });
+    });
+});
+</script>
+</body>
+</html>

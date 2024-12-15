@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<?php require_once("ht_head.html") ?>
+</head>
+
+<body>
+<?php require_once("ht_nav.html") ?>
+
+<article>
+<?php
+require_once("ht_inc.php");
+$rfriends_mes = "ラジオ録音ツール";
+
+$subno = "";
+$val = "";
+$val2 = "";
+$sel = 0;
+$sno = 0;
+$ht_jump_cur  = "menu_ss";
+$ht_jump_addr = "menu_sss.html";
+$ht_jump_val  = "";
+$ht_jump_val2 = "";
+$ht_jump_val3 = "";
+$ht_jump_btn2 = 0;
+$ht_jump_btn3 = 0;
+$ht_jump_btn1_label = "";
+$ht_jump_btn2_label = "";
+$ht_jump_btn3_label = "";
+
+if (isset($_GET['subno'])) {
+    $subno = $_GET['subno'];
+    if (isset($_GET['val'])) {
+        $val = $_GET['val'];
+    }
+    if (isset($_GET['val2'])) {
+        $val2 = $_GET['val2'];
+    }
+    if (isset($_GET['sel'])) {
+        $sel = $_GET['sel'];
+    }
+    if (isset($_GET['sno'])) {
+        $sno = $_GET['sno'];
+    }
+} else {
+    $subno = $_POST['subno'];
+    $val = $_POST['val'];
+    if (isset($_POST['val2'])) {
+        $val2 = $_POST['val2'];
+    }
+    if (isset($_POST['sel'])) {
+        $sel = $_POST['sel'];
+    }
+    if (isset($_POST['sno'])) {
+        $sno = $_POST['sno'];
+    }
+}
+
+$no = substr($subno,0,2);
+$mes = "";
+
+ht_substart($subno,$sno,$val,$val2,$sel,"");
+require_once("menu/menu".$no."ss.php");
+//ht_subend($subno,$sno,$val,$val2,$sel,"");
+?>
+
+</article>
+
+<?php require_once("ht_footer.html") ?>
+
+</body>
+</html>
