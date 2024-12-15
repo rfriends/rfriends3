@@ -1,0 +1,2 @@
+<?php
+ $ex_type = $ex_radiru_vod; ht_subtitle($subno,""); switch ($subno) { case "0501": $val0 = ht_set_val($val); $wdat = $val0[0]; if ($sel == 1) { ht_rec_start("rec",$val,$ex_type); } else if ($sel == 2) { ht_live_radiru_vod($wdat,$ex_type); } else if ($sel == 3) { ht_live_server($wdat,$ex_type); } break; case "0502": ht_play_abort_server("聴取"); break; default: ht_development($subno,$val,2); break; } 

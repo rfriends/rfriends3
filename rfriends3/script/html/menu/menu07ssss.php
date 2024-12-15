@@ -1,0 +1,2 @@
+<?php
+ $ex_type = $ex_podcast; ht_subtitle($subno,""); switch ($subno) { case "070201": case "070202": case "070203": case "0704": case "0706": ht_play_abort_server("聴取"); break; case "070300": case "070301": case "070302": case "070303": ht_play_abort_server("聴取"); break; default: ht_development($subno,$val,2); break; } 
