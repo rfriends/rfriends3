@@ -1,0 +1,66 @@
+# 2022/12/10
+#---------------------------------------
+# delivery.dat
+#
+# デリバリー機能のon/off
+# :dlvy
+# on
+#
+# ユーザ設定
+# :dlvy_users
+# user1
+# user2
+#
+# ディレクトリ設定
+#:dlvy_user1_dir
+#/home/rpi/dir/
+#
+# 実行コマンド
+#:dlvy_user1_copy
+#LFR,オールナイト
+#
+# :dlvy_user_type_cmd
+# キーワード
+# ...
+# ...
+#
+#  user = usersで設定したユーザ
+#  type = radiko,timefree,
+#         radiru,radiru_vod,radiru_gogaku
+#  cmd = dir,copyf,copy,movef,move
+#        (f:force強制)
+#---------------------------------------
+:dlvy
+#on
+#
+:dlvy_users
+#user1
+#user2
+#
+:dlvy_user1_radiko_dir
+#/home/rpi/smbdir/usrx/radiko/
+#
+:dlvy_user1_radiko_copy
+#TBS,JUNK,深夜の馬鹿力
+#TBS,JUNK,不毛な議論
+#
+:dlvy_user1_radiko_move
+#LFR,オールナイト
+#
+:dlvy_user1_timefree_dir
+:dlvy_user1_timefree_copy
+#
+:dlvy_user1_radiru_dir
+:dlvy_user1_radiru_copy
+#
+:dlvy_user1_radiru_vod_dir
+:dlvy_user1_radiru_vod_copy
+#
+:dlvy_user1_radiru_gogaku_dir
+:dlvy_user1_radiru_gogaku_copy
+#
+:dlvy_user2_radiko_dir
+:dlvy_user2_radiko_copy
+#---------------------------------------
+# --- ここまで
+#

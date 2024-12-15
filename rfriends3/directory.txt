@@ -1,0 +1,213 @@
+
+├── rfriends3
+├── [bin]
+│   ├── config
+│   │   ├── crontab
+│   │   ├── premium.ini
+│   │   ├── radiko_callsign.csv
+│   │   ├── radiru_callsign.csv
+│   │   ├── rfriends.ini
+│   │   ├── rfriends_tag.ini
+│   │   ├── sendmail.ini
+│   │   ├── user_process.bat
+│   │   ├── user_process.sh
+│   │   └── usrdir.ini
+│   ├── directory.txt
+│   ├── etc
+│   │   ├── rf_editor
+│   │   ├── tmpdef
+│   │   └── usrdef
+│   ├── ex_rfriends.bat
+│   ├── ex_rfriends.sh
+│   ├── ext
+│   ├── ex_tools_arch.sh
+│   ├── ex_tools_centos.sh
+│   ├── ex_tools_osx.sh
+│   ├── ex_tools.sh
+│   ├── ex_tools_ubuntu.sh
+│   ├── nrf2lite.sh
+│   ├── nrfriends3.sh
+│   ├── rf2lite.bat
+│   ├── rf2lite.sh
+│   ├── rfgdinit.bat
+│   ├── rfgdinit.sh
+│   ├── _Rfriends3
+│   ├── rfriends3.bat
+│   ├── rfriends3.sh
+│   ├── rfriends3.txt
+│   ├── rf_up.bat
+│   ├── rf_up.sh
+│   ├── rfx
+│   ├── rfx.desktop
+│   ├── rfx.png
+│   ├── rsv
+│   │   ├── 20210711_140000_145500_FMT.dat
+│   │   ├── 20210711_140000_145500_FMT.sh
+│   │   └── sch
+│   │       ├── 2021-07-11_130_r1.json
+│   │       ├── 2021-07-11_130_r2.json
+│   │       ├── 2021-07-11_130_r3.json
+│   │       ├── 20210711_JP13.xml
+│   │       └── config.xml
+│   ├── script
+│   │   ├── ans.bat
+│   │   ├── config_ini.php
+│   │   ├── config.php
+│   │   ├── config_sys_07.php
+│   │   ├── crontab
+│   │   ├── ex_radiko.bat
+│   │   ├── ex_radiko.sh
+│   │   ├── ex_radiru.bat
+│   │   ├── ex_radiru_gogaku.bat
+│   │   ├── ex_radiru_gogaku.sh
+│   │   ├── ex_radiru.sh
+│   │   ├── ex_radiru_vod.bat
+│   │   ├── ex_radiru_vod.sh
+│   │   ├── ex_rfriends.bat
+│   │   ├── ex_rfriends.sh
+│   │   ├── ex_timefree.bat
+│   │   ├── ex_timefree.sh
+│   │   ├── invisible.vbs
+│   │   ├── lang.dat
+│   │   ├── learning.xml
+│   │   ├── notify
+│   │   ├── PHPMailer
+│   │   │   ├── COMMITMENT
+│   │   │   ├── composer.json
+│   │   │   ├── get_oauth_token.php
+│   │   │   ├── language
+│   │   │   ├── language.zip
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── SECURITY.md
+│   │   │   ├── src
+│   │   │   │   ├── Exception.php
+│   │   │   │   ├── OAuth.php
+│   │   │   │   ├── PHPMailer.php
+│   │   │   │   ├── POP3.php
+│   │   │   │   └── SMTP.php
+│   │   │   └── VERSION
+│   │   ├── premium.ini
+│   │   ├── radiko_callsign.csv
+│   │   ├── radiru_callsign.csv
+│   │   ├── rf_clear.php
+│   │   ├── rf_common.php
+│   │   ├── rf_downloader.php
+│   │   ├── rf_echo.php
+│   │   ├── rf_future.bat
+│   │   ├── rf_future.php
+│   │   ├── rf_future.sh
+│   │   ├── rf_future.txt
+│   │   ├── rf_gateway_def.php
+│   │   ├── rf_gateway_ext.php
+│   │   ├── rf_gateway.php
+│   │   ├── rf_gdriveinit.php
+│   │   ├── rf_gdrive.php
+│   │   ├── rf_inc.php
+│   │   ├── rf_keyword.php
+│   │   ├── rf_menu_def.php
+│   │   ├── rf_menu_new.php
+│   │   ├── rf_menu.php
+│   │   ├── rf_menu_sub_new.php
+│   │   ├── rf_menu_sub.php
+│   │   ├── rf_ondemand.php
+│   │   ├── rf_player.php
+│   │   ├── rf_premium.php
+│   │   ├── rf_radiko.php
+│   │   ├── rf_radiru.php
+│   │   ├── rf_reserve.php
+│   │   ├── rfriends_check.php
+│   │   ├── rfriends_dontsleep.php
+│   │   ├── rfriends_exec_cleanlog.php
+│   │   ├── rfriends_exec_dummy.php
+│   │   ├── rfriends_exec_fin.php
+│   │   ├── rfriends_exec.php
+│   │   ├── rfriends_exec_radiko.php
+│   │   ├── rfriends_exec_radiru.php
+│   │   ├── rfriends_exec_timefree_kw.php
+│   │   ├── rfriends_exec_timefree.php
+│   │   ├── rfriends_exec_wdat_rec.php
+│   │   ├── rfriends_get_editfn.php
+│   │   ├── rfriends.ini
+│   │   ├── rfriends.ini.bak
+│   │   ├── rfriends.php
+│   │   ├── rfriends_rec_fin.php
+│   │   ├── rfriends_rec.php
+│   │   ├── rfriends_rec_sleep.php
+│   │   ├── rfriends_rec_timefree.php
+│   │   ├── rfriends_tag.ini
+│   │   ├── rf_sub_lnx.php
+│   │   ├── rf_sub_osx.php
+│   │   ├── rf_sub_win.php
+│   │   ├── rf_timefree.php
+│   │   ├── rf_update.php
+│   │   ├── rf_upd_common.php
+│   │   ├── rf_upd_system.php
+│   │   ├── rf_upd_tool.php
+│   │   ├── rf_up_inc.php
+│   │   ├── rf_up.php
+│   │   ├── sendmail.ini
+│   │   ├── testmail
+│   │   ├── update
+│   │   ├── update.bat
+│   │   ├── update_osx.sh
+│   │   ├── update.sh
+│   │   ├── up_tools.sh
+│   │   ├── user_process.bat.org
+│   │   ├── user_process.sh.org
+│   │   └── usrdir.ini
+│   ├── template
+│   │   ├── config_usr_07.php
+│   │   ├── kw
+│   │   │   ├── common.dat
+│   │   │   ├── premium.dat
+│   │   │   ├── program.dat
+│   │   │   ├── radiko.dat
+│   │   │   ├── radiru.dat
+│   │   │   ├── radiru_gogaku.dat
+│   │   │   ├── radiru_other.dat
+│   │   │   ├── radiru_vod.dat
+│   │   │   ├── station.dat
+│   │   │   └── timefree.dat
+│   │   ├── premium.ini
+│   │   ├── radiko_callsign.csv
+│   │   ├── radiru_callsign.csv
+│   │   ├── rfriends.ini
+│   │   ├── rfriends_tag.ini
+│   │   ├── sendmail.ini
+│   │   ├── user_process.bat
+│   │   ├── user_process.sh
+│   │   └── usrdir.ini
+│   ├── tmp
+│   │   ├── 20210711_140000_145500_FMT.err
+│   │   ├── 20210711_140000_145500_FMT.flg
+│   │   ├── 20210711_140000_145500_FMT.out
+│   │   ├── 20210711_140000_145500_FMT.tim
+│   │   ├── lang.dat
+│   │   ├── _Rfriends3
+│   │   ├── _Rfriends3_0
+│   │   ├── _Rfriends3_1
+│   │   ├── _Rfriends3_2
+│   │   ├── rfriends_auth_token
+│   │   ├── rfriends_cleanlog
+│   │   └── rfriends_premiumarea
+│   ├── tools_win.txt
+│   ├── usr
+│   │   ├── kw
+│   │   │   ├── common.dat
+│   │   │   ├── premium.dat
+│   │   │   ├── radiko.dat
+│   │   │   ├── radiru.dat
+│   │   │   ├── radiru_gogaku.dat
+│   │   │   ├── radiru_other.dat
+│   │   │   ├── radiru_vod.dat
+│   │   │   ├── station.dat
+│   │   │   └── timefree.dat
+│   │   ├── log
+│   │   ├── radiko
+│   │   │   └── TBS_伊集院光とらじおと(2)_20210527_1000_1100.m4a
+│   │   ├── radiru
+│   │   ├── radiru_gogaku
+│   │   ├── radiru_vod
+│   │   └── timefree
+│   └── wget_https_proxy
