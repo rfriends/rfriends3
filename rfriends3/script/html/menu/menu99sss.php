@@ -1,2 +1,0 @@
-<?php
- global $pcastdir; global $DS; ht_subtitle($subno,""); switch ($subno) { case "9909": $filepath = pathinfo($val); $ext = $filepath['extension']; if ($ext == "log" || $ext == "txt" || $ext == "dat") { $fl = $val; ht_textedit($fl,0,0); } else if ($ext == "mp3" || $ext == "m4a") { $fl = $val; ht_pgm_disp($fl); ht_webaudio($fl,""); } break; default: ht_development($subno,$val,2); break; } 

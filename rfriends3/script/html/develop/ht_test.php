@@ -1,2 +1,0 @@
-<?php
- $rfriends_mes = "ラジオ録音ツール"; echo_msg(2,"rfriends test"); $value = $_POST['value']; if (isset($_POST['para'])) { $para = $_POST['para']; } else { $para = "off"; } print_r($value); switch ($value['id']) { case 'test1': echo_msg(2,"id : ".$value['id']); echo_msg(2,"para : ".$para); break; case 'test2': echo_msg(2,"id : ".$value['id']); $fl = "develop/test.txt"; ht_textedit($fl,0,0); break; case 'test3': echo_msg(2,"id : ".$value['id']); break; default: break; } ht_subend("sub","","","mes") ?>

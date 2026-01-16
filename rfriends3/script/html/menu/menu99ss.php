@@ -1,2 +1,0 @@
-<?php
- function getFileList($dir) { global $DS; $files = glob(rtrim($dir, $DS) . $DS.'*'); $list = array(); foreach ($files as $file) { if (is_file($file)) { $list[] = $file; } if (is_dir($file)) { $list = array_merge($list, getFileList($file)); } } return $list; } ht_subtitle($subno,""); switch ($subno) { case "9909": break; default: ht_development($subno,$val,2); break; } 
