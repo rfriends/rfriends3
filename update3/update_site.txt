@@ -2,4 +2,5 @@ http://rfriends.s324.xrea.com/
 http://rfriends3.s328.xrea.com/
 http://rfuser.s323.xrea.com/
 https://raw.githubusercontent.com/rfriends/rfriends3/main/
-;update_site.txt 2026/04/06 16:22
+;                                                                                                   
+;update_site.txt 2026/04/07 18:14
