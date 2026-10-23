@@ -1,4 +1,8 @@
-正式版 1.6.3
+正式版 1.6.4
 をリリースしました。
 
-・radiko timefreeのチャプター機能に対応
+・Windows版をPHP2shell対策済PHPに更新
+・Windows版での録音データ再生の不具合を修正
+
+・WebRadioに局のWebsiteのリンクを追加
+・WebRadioに全国を追加
